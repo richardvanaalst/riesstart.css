@@ -1,0 +1,49 @@
+/*! Riestart | github.com/richardvanaalst/riestart.css */
+
+:root {
+  --ON: initial;
+  --OFF: "";
+}
+
+html {
+  font: 1rem/1.5 system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #000;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+p {
+  max-width: 70ch;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  width: 100%;
+}
+
+:target {
+  scroll-margin-block: 2ex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
